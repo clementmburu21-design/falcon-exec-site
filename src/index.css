@@ -89,3 +89,34 @@
 .fleet-bottom-cta h2{margin-bottom:15px}.fleet-bottom-cta>p:not(.fleet-eyebrow){color:#aaa8a2;font-size:12px;line-height:1.8;max-width:510px;margin:0 auto 25px}
 @media(max-width:900px){.fleet-catalogue-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.fleet-page-shell{width:calc(100% - 36px)}.fleet-hero{min-height:510px;background-position:58% center}.fleet-hero-content{padding:75px 0}.fleet-page-heading{display:block}.fleet-count{display:inline-block;margin-top:18px}.fleet-catalogue{padding-top:65px;padding-bottom:68px}.fleet-filters{gap:7px;margin:25px 0}.fleet-filters button{padding:9px 11px;font-size:9px}.fleet-catalogue-grid{grid-template-columns:1fr}.fleet-listing-image{height:235px}.fleet-listing-info>p:not(.fleet-listing-number){min-height:0}.chauffeur-own-car{padding:65px 0}.chauffeur-own-car-inner{grid-template-columns:1fr}.chauffeur-own-car-mark{width:150px;height:150px;justify-self:start;margin-top:8px}.chauffeur-own-car-mark span{font-size:75px}.fleet-bottom-cta{padding:68px 20px}}
+
+
+/* Individual fleet vehicle detail pages */
+.fleet-listing-actions{display:flex;align-items:center;gap:16px;border-top:1px solid #38342b;margin-top:16px;padding-top:14px}
+.fleet-listing-actions .fleet-enquire{border:0;padding:0;margin:0;width:auto;white-space:nowrap}
+.fleet-view-link{color:#f0e9dc;font-size:8px;letter-spacing:.13em;font-weight:700;white-space:nowrap}
+.fleet-view-link span{color:#c7a461;font-size:14px;margin-left:5px}
+.vehicle-detail-page{background:#0b0c0e;color:#f5f2eb;min-height:70vh}
+.vehicle-detail-top{border-bottom:1px solid #292824;padding:18px 0;color:#8f8b82;font-size:9px;letter-spacing:.12em}
+.vehicle-detail-top a{color:#d0ae70}.vehicle-detail-top span{margin-left:9px}
+.vehicle-detail-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:58px;align-items:center;padding-top:66px;padding-bottom:78px}
+.vehicle-detail-photo{height:470px;background:#171819;border:1px solid #302c24;overflow:hidden}
+.vehicle-detail-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.vehicle-detail-copy h1{font:500 clamp(40px,5vw,62px)/1.08 'Playfair Display',serif;margin:12px 0 18px;letter-spacing:-.03em}
+.vehicle-detail-label{display:inline-block;color:#d4b579;border:1px solid #5b4a2e;padding:7px 10px;font-size:8px;letter-spacing:.15em;text-transform:uppercase}
+.vehicle-detail-copy>p:not(.fleet-eyebrow){color:#b5b1a8;font-size:13px;line-height:1.9}
+.vehicle-detail-copy .vehicle-detail-note{border-left:2px solid #c7a461;padding-left:14px;margin:22px 0 26px;font-size:11px}
+.vehicle-back-link{display:block;color:#d0ae70;font-size:10px;margin-top:20px}
+.vehicle-detail-information{background:#141514;border-top:1px solid #302b21;border-bottom:1px solid #302b21;padding:70px 0}
+.vehicle-detail-information-inner{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.vehicle-detail-information h2,.vehicle-detail-footer h2{font:500 clamp(32px,4vw,46px)/1.15 'Playfair Display',serif;margin:0}
+.vehicle-detail-information-inner>div:last-child>p{color:#aaa8a2;font-size:12px;line-height:1.9;margin:0}
+.vehicle-detail-information ul{padding-left:18px;color:#d0cec8;font-size:11px;line-height:2.1;margin:17px 0}
+.vehicle-detail-information-inner>div:last-child>a{color:#d0ae70;font-size:9px;letter-spacing:.14em;font-weight:700}
+.vehicle-detail-footer{text-align:center;padding:75px 20px 85px;background:radial-gradient(ellipse at 50% 100%,#282116,#0b0c0e 70%)}
+.vehicle-detail-footer h2{margin:0 0 24px}
+.vehicle-not-found{min-height:55vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:50px 20px;background:#0b0c0e}
+.vehicle-not-found h1{font:500 42px 'Playfair Display',serif;margin:0 0 10px}
+.vehicle-not-found>p:not(.fleet-eyebrow){color:#aaa8a2;margin-bottom:25px}
+@media(max-width:800px){.vehicle-detail-hero{grid-template-columns:1fr;gap:30px;padding-top:38px;padding-bottom:55px}.vehicle-detail-photo{height:340px}.vehicle-detail-information-inner{grid-template-columns:1fr;gap:25px}}
+@media(max-width:600px){.fleet-listing-actions{gap:12px}.fleet-listing-actions .fleet-enquire{font-size:7px}.fleet-view-link{font-size:7px}.vehicle-detail-photo{height:260px}.vehicle-detail-copy h1{font-size:42px}.vehicle-detail-information{padding:55px 0}}
