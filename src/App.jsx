@@ -5,7 +5,8 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
-import Contact from './pages/Contact'\nimport Fleet from './pages/Fleet'
+import Contact from './pages/Contact'
+import Fleet from './pages/Fleet'
 
 export default function App() {
   return (
@@ -15,7 +16,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
-          <Route path="/services" element={<Services/>} />\n          <Route path="/fleet" element={<Fleet/>} />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/fleet" element={<Fleet/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       </main>
