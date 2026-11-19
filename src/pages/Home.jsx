@@ -3,14 +3,14 @@ import React from 'react'
 const whatsapp = 'https://wa.me/254768000540?text=Hello%20Falcon%20Executive%20Logistics%2C%20I%27d%20like%20to%20make%20a%20booking%20enquiry.'
 
 const fleet = [
-  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A spacious 7-seat SUV option for executive travel, family journeys and upcountry trips.', image: '/fleet/prado-black.jpg', alt: 'Black Toyota Land Cruiser Prado' },
-  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A refined SUV option for comfortable city travel and longer journeys.', image: '/fleet/prado-white.jpg', alt: 'White Toyota Land Cruiser Prado' },
-  { category: 'EXECUTIVE', name: 'Mercedes-Benz S-Class', detail: 'An elegant choice for VIP guests, executive movements and special occasions.', image: '/fleet/mercedes-s-class.jpg', alt: 'Black Mercedes-Benz executive saloon' },
-  { category: 'PREMIUM SALOON', name: 'Mercedes-Benz C-Class', detail: 'A stylish and comfortable option for business and personal travel.', image: '/fleet/mercedes-c-class.jpg', alt: 'Silver Mercedes-Benz C-Class' },
-  { category: 'CROSSOVER SUV', name: 'Mazda CX-5', detail: 'A versatile option for everyday comfort, business travel and weekend escapes.', image: '/fleet/mazda-cx5.jpg', alt: 'Silver Mazda CX-5' },
-  { category: 'GROUP COMFORT', name: 'Toyota Voxy', detail: 'Practical space and comfort for families, small groups and airport transfers.', image: '/fleet/toyota-voxy.jpg', alt: 'White Toyota Voxy people carrier' },
-  { category: 'PRACTICAL TRAVEL', name: 'Toyota Fielder', detail: 'A convenient choice for day-to-day mobility and longer practical journeys.', image: '/fleet/toyota-fielder.jpg', alt: 'White Toyota Fielder' },
-  { category: 'CITY COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient city movement and everyday errands.', image: '/fleet/toyota-vitz.jpg', alt: 'Silver Toyota Vitz' },
+  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A spacious 7-seater SUV with a commanding presence for executive and upcountry journeys.', image: '/fleet/prado-black.jpg', alt: 'Black Toyota Land Cruiser Prado' },
+  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A refined 4x4 option for VIP transfers, family travel and special occasions.', image: '/fleet/prado-white.jpg', alt: 'White Toyota Land Cruiser Prado' },
+  { category: 'LUXURY SALOON', name: 'Mercedes-Benz S-Class', detail: 'A sophisticated choice for executive guests, VIP transfers and formal occasions.', image: '/fleet/mercedes-s-class.jpg', alt: 'Mercedes-Benz S-Class' },
+  { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz C-Class', detail: 'Comfortable executive transport for meetings, airport transfers and city travel.', image: '/fleet/mercedes-c-class.jpg', alt: 'Mercedes-Benz C-Class' },
+  { category: 'CROSSOVER SUV', name: 'Mazda CX-5', detail: 'A versatile and comfortable SUV for everyday travel and weekend journeys.', image: '/fleet/mazda-cx5.jpg', alt: 'Mazda CX-5' },
+  { category: 'PEOPLE CARRIER', name: 'Toyota Voxy', detail: 'A practical option for families, small groups and comfortable transfers.', image: '/fleet/toyota-voxy.jpg', alt: 'Toyota Voxy' },
+  { category: 'ESTATE', name: 'Toyota Fielder', detail: 'A dependable, economical choice for practical city and business travel.', image: '/fleet/toyota-fielder.jpg', alt: 'Toyota Fielder' },
+  { category: 'COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient and budget-conscious city mobility.', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz' },
 ]
 const services = [
   ['01', 'Executive Chauffeur', 'Professional chauffeur arrangements for business meetings, executives and distinguished guests.'],
