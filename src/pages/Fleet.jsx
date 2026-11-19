@@ -1,14 +1,15 @@
 import React, { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const vehicles = [
-  { name: 'Toyota Land Cruiser Prado', category: 'SUVs', label: 'Premium 4×4', image: '/fleet/prado-black.jpg', alt: 'Black Toyota Land Cruiser Prado', detail: 'A confident, spacious SUV for executive travel, family journeys and upcountry trips.' },
-  { name: 'Toyota Land Cruiser Prado', category: 'SUVs', label: 'Premium 4×4', image: '/fleet/prado-white.jpg', alt: 'White Toyota Land Cruiser Prado', detail: 'A refined 4×4 option for VIP transfers, special occasions and longer journeys.' },
-  { name: 'Mercedes-Benz S-Class', category: 'Luxury', label: 'Luxury saloon', image: '/fleet/mercedes-s-class.jpg', alt: 'Mercedes-Benz S-Class', detail: 'A distinguished saloon for executive guests, formal occasions and premium transfers.' },
-  { name: 'Mercedes-Benz C-Class', category: 'Executive', label: 'Executive saloon', image: '/fleet/mercedes-c-class.jpg', alt: 'Mercedes-Benz C-Class', detail: 'An elegant choice for business meetings, airport transfers and city travel.' },
-  { name: 'Mazda CX-5', category: 'SUVs', label: 'Crossover SUV', image: '/fleet/mazda-cx5.jpg', alt: 'Mazda CX-5', detail: 'A versatile crossover suited to everyday mobility and weekend journeys.' },
-  { name: 'Toyota Voxy', category: 'Group travel', label: 'People carrier', image: '/fleet/toyota-voxy.jpg', alt: 'Toyota Voxy', detail: 'A practical people carrier for families, small groups and comfortable transfers.' },
-  { name: 'Toyota Fielder', category: 'Everyday', label: 'Estate', image: '/fleet/toyota-fielder.jpg', alt: 'Toyota Fielder', detail: 'A practical option for everyday city travel and business errands.' },
-  { name: 'Toyota Vitz', category: 'Everyday', label: 'Compact', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz', detail: 'A compact choice for convenient, economical city mobility.' },
+export const vehicles = [
+  { slug: 'prado-black', name: 'Toyota Land Cruiser Prado', category: 'SUVs', label: 'Premium 4×4', image: '/fleet/prado-black.jpg', alt: 'Black Toyota Land Cruiser Prado', detail: 'A confident, spacious SUV for executive travel, family journeys and upcountry trips.' },
+  { slug: 'prado-white', name: 'Toyota Land Cruiser Prado', category: 'SUVs', label: 'Premium 4×4', image: '/fleet/prado-white.jpg', alt: 'White Toyota Land Cruiser Prado', detail: 'A refined 4×4 option for VIP transfers, special occasions and longer journeys.' },
+  { slug: 'mercedes-s-class', name: 'Mercedes-Benz S-Class', category: 'Luxury', label: 'Luxury saloon', image: '/fleet/mercedes-s-class.jpg', alt: 'Mercedes-Benz S-Class', detail: 'A distinguished saloon for executive guests, formal occasions and premium transfers.' },
+  { slug: 'mercedes-c-class', name: 'Mercedes-Benz C-Class', category: 'Executive', label: 'Executive saloon', image: '/fleet/mercedes-c-class.jpg', alt: 'Mercedes-Benz C-Class', detail: 'An elegant choice for business meetings, airport transfers and city travel.' },
+  { slug: 'mazda-cx5', name: 'Mazda CX-5', category: 'SUVs', label: 'Crossover SUV', image: '/fleet/mazda-cx5.jpg', alt: 'Mazda CX-5', detail: 'A versatile crossover suited to everyday mobility and weekend journeys.' },
+  { slug: 'toyota-voxy', name: 'Toyota Voxy', category: 'Group travel', label: 'People carrier', image: '/fleet/toyota-voxy.jpg', alt: 'Toyota Voxy', detail: 'A practical people carrier for families, small groups and comfortable transfers.' },
+  { slug: 'toyota-fielder', name: 'Toyota Fielder', category: 'Everyday', label: 'Estate', image: '/fleet/toyota-fielder.jpg', alt: 'Toyota Fielder', detail: 'A practical option for everyday city travel and business errands.' },
+  { slug: 'toyota-vitz', name: 'Toyota Vitz', category: 'Everyday', label: 'Compact', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz', detail: 'A compact choice for convenient, economical city mobility.' },
 ]
 
 const filters = ['All vehicles', 'Luxury', 'Executive', 'SUVs', 'Group travel', 'Everyday']
@@ -46,7 +47,7 @@ export default function Fleet() {
         {shown.map((vehicle, index) => <article className="fleet-listing" key={vehicle.image}>
           <div className="fleet-listing-image"><img src={vehicle.image} alt={vehicle.alt} loading="lazy" /><span>{vehicle.label}</span></div>
           <div className="fleet-listing-info"><p className="fleet-listing-number">FALCON FLEET · {(index + 1).toString().padStart(2, '0')}</p><h3>{vehicle.name}</h3><p>{vehicle.detail}</p>
-            <button type="button" className="fleet-enquire" onClick={() => enquire(vehicle)}>ENQUIRE ABOUT THIS VEHICLE <span>↗</span></button>
+            <div className="fleet-listing-actions"><Link className="fleet-view-link" to={`/fleet/${vehicle.slug}`}>VIEW DETAILS <span>→</span></Link><button type="button" className="fleet-enquire" onClick={() => enquire(vehicle)}>WHATSAPP ENQUIRY <span>↗</span></button></div>
           </div>
         </article>)}
       </div>
