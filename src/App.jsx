@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Fleet from './pages/Fleet'
 import FleetVehicle from './pages/FleetVehicle'
+import Booking from './pages/Booking'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/fleet" element={<Fleet/>} />
           <Route path="/fleet/:slug" element={<FleetVehicle/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/book" element={<Booking/>} />
         </Routes>
       </main>
       <Footer />
