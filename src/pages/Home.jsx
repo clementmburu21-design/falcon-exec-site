@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const whatsapp = 'https://wa.me/254768000540?text=Hello%20Falcon%20Executive%20Logistics%2C%20I%27d%20like%20to%20make%20a%20booking%20enquiry.'
 
@@ -80,6 +81,32 @@ export default function Home() {
         <p>We understand that punctuality, presentation and clear communication matter. Falcon Executive Logistics helps individuals and organisations arrange transport with confidence.</p>
         <ul><li><span>✦</span> Service shaped around your itinerary</li><li><span>✦</span> Options for individuals, groups and organisations</li><li><span>✦</span> Clear booking communication from enquiry to confirmation</li></ul>
         <a className="button button-gold" href="/about">DISCOVER FALCON <span>↗</span></a>
+      </div>
+    </section>
+
+
+    <section className="corporate-section">
+      <div className="page-shell corporate-inner">
+        <div className="corporate-copy">
+          <p className="eyebrow">TRANSPORT FOR ORGANISATIONS</p>
+          <h2>Professional mobility for<br /><em>business in motion.</em></h2>
+          <p>From day-to-day executive travel to visiting teams and scheduled events, Falcon Executive Logistics helps organisations arrange transport around their operational needs.</p>
+          <ul>
+            <li><span>✦</span> Executive and staff transportation</li>
+            <li><span>✦</span> Airport pickups for guests and visiting teams</li>
+            <li><span>✦</span> Conference, meeting and event transport enquiries</li>
+            <li><span>✦</span> Vehicle and chauffeur options for planned itineraries</li>
+          </ul>
+          <Link className="button button-gold" to="/book">DISCUSS A CORPORATE REQUIREMENT <span>↗</span></Link>
+        </div>
+        <div className="corporate-audience">
+          <p className="corporate-audience-label">WHO WE CAN SUPPORT</p>
+          <div><span>01</span><p>Companies & business teams</p></div>
+          <div><span>02</span><p>NGOs & international organisations</p></div>
+          <div><span>03</span><p>Embassies & visiting delegations</p></div>
+          <div><span>04</span><p>Hotels, travel partners & event planners</p></div>
+          <small>Each enquiry is discussed individually so the proposed transport can reflect your schedule, passenger needs and budget.</small>
+        </div>
       </div>
     </section>
 
