@@ -3,10 +3,14 @@ import React from 'react'
 const whatsapp = 'https://wa.me/254768000540?text=Hello%20Falcon%20Executive%20Logistics%2C%20I%27d%20like%20to%20make%20a%20booking%20enquiry.'
 
 const fleet = [
-  { category: 'LUXURY SALOON', name: 'Mercedes-Benz S-Class', detail: 'A refined choice for VIP guests, executive journeys and special occasions.', image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=85', alt: 'Luxury Mercedes-Benz saloon car' },
-  { category: 'PREMIUM SUV', name: 'Land Cruiser Prado', detail: 'Comfortable, capable mobility for city travel and longer journeys.', image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85', alt: 'Premium four wheel drive SUV' },
-  { category: 'LUXURY SUV', name: 'Lexus LX / Range Rover', detail: 'A commanding presence for premium transfers and distinguished guests.', image: 'https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1000&q=85', alt: 'Premium luxury vehicle' },
-  { category: 'GROUP COMFORT', name: 'Toyota Noah', detail: 'A practical, comfortable option for families, teams and small groups.', image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=85', alt: 'Modern passenger vehicle' },
+  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A spacious 7-seat SUV option for executive travel, family journeys and upcountry trips.', image: '/fleet/prado-black.jpg', alt: 'Black Toyota Land Cruiser Prado' },
+  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A refined SUV option for comfortable city travel and longer journeys.', image: '/fleet/prado-white.jpg', alt: 'White Toyota Land Cruiser Prado' },
+  { category: 'EXECUTIVE', name: 'Mercedes-Benz S-Class', detail: 'An elegant choice for VIP guests, executive movements and special occasions.', image: '/fleet/mercedes-s-class.jpg', alt: 'Black Mercedes-Benz executive saloon' },
+  { category: 'PREMIUM SALOON', name: 'Mercedes-Benz C-Class', detail: 'A stylish and comfortable option for business and personal travel.', image: '/fleet/mercedes-c-class.jpg', alt: 'Silver Mercedes-Benz C-Class' },
+  { category: 'CROSSOVER SUV', name: 'Mazda CX-5', detail: 'A versatile option for everyday comfort, business travel and weekend escapes.', image: '/fleet/mazda-cx5.jpg', alt: 'Silver Mazda CX-5' },
+  { category: 'GROUP COMFORT', name: 'Toyota Voxy', detail: 'Practical space and comfort for families, small groups and airport transfers.', image: '/fleet/toyota-voxy.jpg', alt: 'White Toyota Voxy people carrier' },
+  { category: 'PRACTICAL TRAVEL', name: 'Toyota Fielder', detail: 'A convenient choice for day-to-day mobility and longer practical journeys.', image: '/fleet/toyota-fielder.jpg', alt: 'White Toyota Fielder' },
+  { category: 'CITY COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient city movement and everyday errands.', image: '/fleet/toyota-vitz.jpg', alt: 'Silver Toyota Vitz' },
 ]
 const services = [
   ['01', 'Executive Chauffeur', 'Professional chauffeur arrangements for business meetings, executives and distinguished guests.'],
@@ -56,22 +60,22 @@ export default function Home() {
     </section>
 
     <section className="fleet-section"><div className="page-shell">
-      <div className="fleet-heading-row"><Heading eyebrow="THE FLEET" title="The right vehicle for every occasion." text="Explore some of the vehicle categories we can arrange. Specific models and availability are confirmed when you enquire." />
+      <div className="fleet-heading-row"><Heading eyebrow="THE FLEET" title="A vehicle for every occasion." text="Browse a selection of vehicles we can arrange for executive, family and everyday travel. Ask us about the right option for your journey." />
         <a className="text-link" href={whatsapp} target="_blank" rel="noopener noreferrer">REQUEST A VEHICLE <span>↗</span></a>
       </div>
       <div className="fleet-grid">{fleet.map(vehicle =>
-        <article className="fleet-card" key={vehicle.name}>
+        <article className="fleet-card" key={vehicle.name + vehicle.image}>
           <div className="fleet-image-wrap"><img src={vehicle.image} alt={vehicle.alt} loading="lazy" /><span className="fleet-category">{vehicle.category}</span></div>
           <div className="fleet-card-body"><h3>{vehicle.name}</h3><p>{vehicle.detail}</p>
             <a href={whatsapp} target="_blank" rel="noopener noreferrer">CHECK AVAILABILITY <span>↗</span></a>
           </div>
         </article>
       )}</div>
-      <p className="fleet-disclaimer">Vehicle images are illustrative. Vehicle supply, model, rate and availability are confirmed individually before booking.</p>
+      <p className="fleet-disclaimer">Photographs show example vehicles arranged through Falcon Executive Logistics. Exact vehicle, supplier, rate and availability are confirmed individually before booking.</p>
     </div></section>
 
     <section className="experience-section">
-      <div className="experience-photo" role="img" aria-label="Luxury vehicle prepared for an executive journey" />
+      <div className="experience-photo" role="img" aria-label="Premium vehicle interior prepared for an executive journey" />
       <div className="experience-copy"><p className="eyebrow">MORE THAN A RIDE</p><h2>Professionalism in every detail.</h2>
         <p>We understand that punctuality, presentation and clear communication matter. Falcon Executive Logistics helps individuals and organisations arrange transport with confidence.</p>
         <ul><li><span>✦</span> Service shaped around your itinerary</li><li><span>✦</span> Options for individuals, groups and organisations</li><li><span>✦</span> Clear booking communication from enquiry to confirmation</li></ul>
