@@ -9,7 +9,7 @@ export default function Header() {
 
   const links = [
     { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
+    { name: 'Services', path: '/services' },\n    { name: 'Fleet', path: '/fleet' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
