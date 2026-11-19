@@ -51,3 +51,41 @@
 .services-grid{grid-template-columns:1fr;margin-top:35px}.service-card{min-height:220px;padding:24px}.fleet-heading-row{display:block}.fleet-heading-row .text-link{display:inline-block;margin-top:24px}
 .fleet-grid{grid-template-columns:1fr;gap:14px}.fleet-image-wrap{height:220px}.fleet-card-body p{min-height:0}.experience-section{grid-template-columns:1fr}.experience-photo{min-height:290px}.experience-copy{padding:60px 24px 68px}
 .closing-cta{padding:75px 0 65px}.closing-inner h2{font-size:52px}.closing-contact{gap:12px}.closing-contact a{margin-right:0}}
+
+/* Dedicated fleet catalogue */
+.fleet-page{background:#0b0c0e;color:#f5f2eb;overflow:hidden}.fleet-page-shell{width:min(1180px,calc(100% - 56px));margin:0 auto}
+.fleet-hero{min-height:470px;position:relative;display:flex;align-items:center;background:url('/fleet/prado-white.jpg') center 48%/cover no-repeat}
+.fleet-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,6,8,.94),rgba(5,6,8,.62) 58%,rgba(5,6,8,.2))}
+.fleet-hero-content{position:relative;padding:76px 0}.fleet-eyebrow{color:#c7a461;font-size:10px;font-weight:700;letter-spacing:.2em;margin:0 0 17px}
+.fleet-hero h1{font:500 clamp(50px,7vw,82px)/1.02 'Playfair Display',serif;letter-spacing:-.04em;margin:0}.fleet-hero h1 em{color:#d0ae70;font-weight:500}
+.fleet-hero-content>p:not(.fleet-eyebrow){max-width:490px;color:#d0cec8;font-size:14px;line-height:1.9;margin:20px 0 26px}
+.fleet-gold-button{display:inline-flex;align-items:center;gap:22px;background:#c7a461;color:#101010;padding:15px 20px;font-size:9px;font-weight:700;letter-spacing:.14em;border:1px solid #c7a461;transition:.2s}
+.fleet-gold-button:hover{background:#dfc184;transform:translateY(-2px)}.fleet-gold-button span{font-size:15px}
+.fleet-catalogue{padding-top:85px;padding-bottom:90px}.fleet-page-heading{display:flex;align-items:end;justify-content:space-between;gap:30px}
+.fleet-page-heading h2,.chauffeur-own-car h2,.fleet-bottom-cta h2{font:500 clamp(36px,5vw,53px)/1.1 'Playfair Display',serif;margin:0}
+.fleet-page-heading>div>p:last-child{color:#aaa8a2;font-size:12px;line-height:1.8;max-width:570px;margin:14px 0 0}
+.fleet-count{color:#c7a461;font-size:9px;letter-spacing:.16em;white-space:nowrap;padding-bottom:7px}
+.fleet-filters{display:flex;gap:8px;flex-wrap:wrap;margin:34px 0 28px}
+.fleet-filters button{border:1px solid #39362f;color:#c5c1b8;background:transparent;padding:10px 14px;font-size:10px;cursor:pointer;transition:.2s}
+.fleet-filters button:hover,.fleet-filters button.active{border-color:#c7a461;color:#d9bb7c;background:#1c1913}
+.fleet-catalogue-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fleet-listing{background:#121315;border:1px solid #292824;min-width:0}
+.fleet-listing-image{height:220px;position:relative;overflow:hidden;background:#222}
+.fleet-listing-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s;filter:saturate(.82)}
+.fleet-listing:hover img{transform:scale(1.04)}
+.fleet-listing-image span{position:absolute;bottom:12px;left:12px;background:rgba(8,9,10,.88);color:#d7b879;padding:7px 9px;font-size:8px;letter-spacing:.14em;text-transform:uppercase}
+.fleet-listing-info{padding:20px}.fleet-listing-number{font-size:8px;letter-spacing:.17em;color:#9e895f;margin:0 0 12px}
+.fleet-listing-info h3{font:500 22px 'Playfair Display',serif;margin:0 0 9px}.fleet-listing-info>p:not(.fleet-listing-number){min-height:61px;color:#aaa8a2;font-size:11px;line-height:1.8;margin:0}
+.fleet-enquire{border:0;border-top:1px solid #38342b;background:none;color:#d0ae70;padding:15px 0 0;margin-top:16px;width:100%;display:flex;justify-content:space-between;align-items:center;font-size:8px;letter-spacing:.13em;font-weight:700;cursor:pointer}
+.fleet-enquire span{font-size:15px}.fleet-photo-note{color:#77756f;font-size:10px;line-height:1.7;margin:22px 0 0}
+.chauffeur-own-car{background:#151513;border-top:1px solid #302b21;border-bottom:1px solid #302b21;padding:82px 0}
+.chauffeur-own-car-inner{display:grid;grid-template-columns:1.5fr .7fr;gap:40px;align-items:center}
+.chauffeur-own-car h2{max-width:600px}.chauffeur-own-car-inner>div:first-child>p:not(.fleet-eyebrow){max-width:650px;color:#aaa8a2;font-size:13px;line-height:1.9;margin:18px 0}
+.chauffeur-own-car ul{list-style:none;padding:0;margin:20px 0 28px;display:grid;gap:11px;color:#d0cec8;font-size:11px}
+.chauffeur-own-car li:before{content:'✦';color:#c7a461;margin-right:10px}
+.chauffeur-own-car-mark{width:210px;height:210px;border:1px solid #75603b;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;justify-self:center;color:#c7a461}
+.chauffeur-own-car-mark span{font:italic 100px 'Playfair Display',serif;line-height:.9}.chauffeur-own-car-mark small{font-size:8px;letter-spacing:.22em;text-align:center;line-height:1.7;margin-top:10px}
+.fleet-bottom-cta{text-align:center;padding:85px 20px 90px;background:radial-gradient(ellipse at 50% 100%,#282116,#0b0c0e 70%)}
+.fleet-bottom-cta h2{margin-bottom:15px}.fleet-bottom-cta>p:not(.fleet-eyebrow){color:#aaa8a2;font-size:12px;line-height:1.8;max-width:510px;margin:0 auto 25px}
+@media(max-width:900px){.fleet-catalogue-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.fleet-page-shell{width:calc(100% - 36px)}.fleet-hero{min-height:510px;background-position:58% center}.fleet-hero-content{padding:75px 0}.fleet-page-heading{display:block}.fleet-count{display:inline-block;margin-top:18px}.fleet-catalogue{padding-top:65px;padding-bottom:68px}.fleet-filters{gap:7px;margin:25px 0}.fleet-filters button{padding:9px 11px;font-size:9px}.fleet-catalogue-grid{grid-template-columns:1fr}.fleet-listing-image{height:235px}.fleet-listing-info>p:not(.fleet-listing-number){min-height:0}.chauffeur-own-car{padding:65px 0}.chauffeur-own-car-inner{grid-template-columns:1fr}.chauffeur-own-car-mark{width:150px;height:150px;justify-self:start;margin-top:8px}.chauffeur-own-car-mark span{font-size:75px}.fleet-bottom-cta{padding:68px 20px}}
