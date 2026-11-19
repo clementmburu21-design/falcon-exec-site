@@ -13,6 +13,7 @@ export default function Header() {
     { name: 'Fleet', path: '/fleet' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Booking', path: '/book' },
   ];
 
   return (
@@ -50,14 +51,12 @@ export default function Header() {
             </Link>
           ))}
 
-          <a
-            href="https://wa.me/254768000540"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/book"
             className="bg-[#C6A45C] text-black px-5 py-2.5 rounded-sm font-semibold text-sm hover:bg-[#D9B96F] transition"
           >
             Book Now
-          </a>
+          </Link>
         </nav>
 
         <button
@@ -83,14 +82,13 @@ export default function Header() {
             </Link>
           ))}
 
-          <a
-            href="https://wa.me/254768000540"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/book"
+            onClick={() => setMenuOpen(false)}
             className="bg-[#C6A45C] text-black text-center py-3 font-semibold"
           >
-            Book Now on WhatsApp
-          </a>
+            Book Now
+          </Link>
         </nav>
       )}
     </header>
