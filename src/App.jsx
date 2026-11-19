@@ -7,6 +7,7 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Fleet from './pages/Fleet'
+import FleetVehicle from './pages/FleetVehicle'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/services" element={<Services/>} />
           <Route path="/fleet" element={<Fleet/>} />
+          <Route path="/fleet/:slug" element={<FleetVehicle/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       </main>
