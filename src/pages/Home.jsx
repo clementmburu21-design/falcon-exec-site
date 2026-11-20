@@ -18,7 +18,7 @@ const fleet = [
   { category: 'PEOPLE CARRIER', name: 'Toyota Voxy Hybrid', detail: 'A practical hybrid people carrier for families and small groups.', image: '/fleet/toyota-voxy-hybrid-black.webp', alt: 'Black Toyota Voxy Hybrid' },
   { category: 'CROSSOVER SUV', name: 'Mazda CX-5 (Black)', detail: 'A versatile and comfortable SUV for everyday travel and weekend journeys.', image: '/fleet/mazda-cx5-black.webp', alt: 'Black Mazda CX-5' },
   { category: 'ESTATE', name: 'Toyota Fielder', detail: 'A dependable, economical choice for practical city and business travel.', image: '/fleet/toyota-fielder.jpg', alt: 'Toyota Fielder' },
-  { category: 'COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient and budget-conscious city mobility.', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz' },
+  { category: 'LUXURY SUV', name: 'BMW X5', detail: 'A premium performance SUV combining comfort, presence and versatile everyday capability.', image: '/fleet/toyota-vitz.jpg', alt: 'BMW X5' },
 ]
 const services = [
   ['01', '♙', 'Executive Chauffeur Services', 'Professional, discreet chauffeur-driven transport for executives, VIP guests, business meetings and personal journeys.', '/fleet/chauffeur.webp', 'Chauffeur beside a Mercedes-Benz executive sedan'],
