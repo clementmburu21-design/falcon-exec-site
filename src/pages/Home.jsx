@@ -20,12 +20,12 @@ const fleet = [
   { category: 'COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient and budget-conscious city mobility.', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz' },
 ]
 const services = [
-  ['01', 'Executive Chauffeur Services', 'Professional, discreet chauffeur-driven transport for executives, VIP guests, business meetings and personal journeys.', '/fleet/mercedes-s-class.jpg', 'Chauffeur beside a Mercedes-Benz executive sedan'],
-  ['02', 'Airport & Hotel Transfers', 'Pre-arranged pickups and drop-offs for JKIA, Wilson Airport, hotels, residences and private aviation terminals.', '/fleet/prado-white.jpg', 'Premium SUV prepared for airport transfer'],
-  ['03', 'Premium Car Hire', 'Vehicle options across economy, SUV and luxury categories, with self-drive or chauffeur-driven arrangements subject to availability.', '/fleet/mazda-cx5.jpg', 'Premium vehicle hire options'],
-  ['04', 'Corporate & Delegation Travel', 'Coordinated transport for company teams, visiting delegations, conferences, meetings and organisational assignments.', '/fleet/toyota-voxy.jpg', 'People carrier for corporate group transport'],
-  ['05', 'Weddings & Special Events', 'Elegant vehicle arrangements and transport coordination for weddings, celebrations and memorable occasions.', '/fleet/mercedes-s-class.jpg', 'Luxury vehicle for wedding transport'],
-  ['06', 'Safari & Upcountry Travel', 'Suitable vehicle arrangements for upcountry journeys, leisure travel and selected safari routes across Kenya.', '/fleet/prado-black.jpg', '4x4 vehicle for safari and upcountry travel'],
+  ['01', ♙, 'Executive Chauffeur Services', 'Professional, discreet chauffeur-driven transport for executives, VIP guests, business meetings and personal journeys.', '/fleet/mercedes-s-class.jpg', 'Chauffeur beside a Mercedes-Benz executive sedan'],
+  ['02', ✈, 'Airport & Hotel Transfers', 'Pre-arranged pickups and drop-offs for JKIA, Wilson Airport, hotels, residences and private aviation terminals.', '/fleet/prado-white.jpg', 'Premium SUV prepared for airport transfer'],
+  ['03', ▱, 'Premium Car Hire', 'Vehicle options across economy, SUV and luxury categories, with self-drive or chauffeur-driven arrangements subject to availability.', '/fleet/mazda-cx5.jpg', 'Premium vehicle hire options'],
+  ['04', ♟, 'Corporate & Delegation Travel', 'Coordinated transport for company teams, visiting delegations, conferences, meetings and organisational assignments.', '/fleet/toyota-voxy.jpg', 'People carrier for corporate group transport'],
+  ['05', ♧, 'Weddings & Special Events', 'Elegant vehicle arrangements and transport coordination for weddings, celebrations and memorable occasions.', '/fleet/mercedes-s-class.jpg', 'Luxury vehicle for wedding transport'],
+  ['06', ◎, 'Safari & Upcountry Travel', 'Suitable vehicle arrangements for upcountry journeys, leisure travel and selected safari routes across Kenya.', '/fleet/prado-black.jpg', '4x4 vehicle for safari and upcountry travel'],
 ]
 
 function Heading({ eyebrow, title, text }) {
@@ -56,18 +56,17 @@ export default function Home() {
     </div></section>
 
     <section className="section-block page-shell" id="services">
-      <Heading eyebrow="WHAT WE DO" title="Mobility, made exceptional." text="Flexible transport solutions for business, leisure and life's important moments." />
-      <div className="services-grid">{services.map(([number, title, text, image, alt]) =>
+      <Heading eyebrow="OUR SERVICES" title={<>Mobility Made <em>Exceptional</em></>} text="Comprehensive, tailored transport solutions for business, leisure and special occasions." />
+      <div className="services-grid">{services.map(([number, icon, title, text, image, alt]) =>
         <article className="service-card" key={number}>
           <div className="service-card-image"><img src={image} alt={alt} loading="lazy" /></div>
           <div className="service-card-content">
-            <span className="service-number">{number}</span><h3>{title}</h3><p>{text}</p>
+            <span className="service-icon" aria-hidden="true">{icon}</span><h3>{title}</h3><p>{text}</p>
             <div className="service-card-actions">
-              <a href={whatsapp} target="_blank" rel="noopener noreferrer">WHATSAPP <span>↗</span></a>
-              <a href={`mailto:falconexecutivetours@gmail.com?subject=${encodeURIComponent('Enquiry: ' + title)}&body=${encodeURIComponent('Hello Falcon Executive Logistics, I would like to enquire about ' + title + '. Please contact me with further details.')}`}>EMAIL <span>↗</span></a>
+              <a className="service-arrow" href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label={`Enquire about ${title} on WhatsApp`}>↗</a>
+              <a className="service-email" href={`mailto:falconexecutivetours@gmail.com?subject=${encodeURIComponent('Enquiry: ' + title)}&body=${encodeURIComponent('Hello Falcon Executive Logistics, I would like to enquire about ' + title + '. Please contact me with further details.')}`}>EMAIL ENQUIRY</a>
             </div>
-          </div>
-        </article>
+          </div>     </article>
       )}</div>
     </section>
 
