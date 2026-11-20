@@ -174,3 +174,39 @@
 .corporate-audience small{display:block;color:#89857d;font-size:9px;line-height:1.8;margin-top:20px}
 @media(max-width:850px){.corporate-inner{grid-template-columns:1fr;gap:40px}.corporate-section{padding:72px 0}}
 @media(max-width:600px){.corporate-inner{width:calc(100% - 36px)}.corporate-audience{padding:22px 18px}.corporate-audience>div p{font-size:15px}.corporate-copy h2{font-size:40px}}
+
+
+/* Discover Falcon / About page */
+.about-page{background:#0b0c0e;color:#f5f2eb;overflow:hidden}
+.about-hero{min-height:510px;position:relative;display:flex;align-items:center;background:url('/fleet/mercedes-s-class.jpg') center 52%/cover no-repeat}
+.about-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,6,8,.96),rgba(5,6,8,.78) 44%,rgba(5,6,8,.24) 100%),linear-gradient(0deg,rgba(5,6,8,.35),transparent)}
+.about-hero-content{position:relative;padding-top:80px;padding-bottom:85px}
+.about-hero-content h1{font:500 clamp(58px,8vw,92px)/.98 'Playfair Display',serif;letter-spacing:-.045em;margin:0;color:#fff}
+.about-hero-content h1 em,.about-intro h2 em,.about-services-copy h2 em,.about-coverage h2 em,.about-cta h2 em{color:#d0ae70;font-weight:500}
+.about-hero-content>p:not(.eyebrow){max-width:520px;color:#d0cec8;font-size:14px;line-height:1.9;margin:22px 0 28px}
+.about-intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px;padding-top:105px;padding-bottom:110px}
+.about-intro h2,.about-services-copy h2,.about-coverage h2{font:500 clamp(38px,5vw,55px)/1.1 'Playfair Display',serif;letter-spacing:-.03em;margin:0}
+.about-intro-copy p,.about-services-copy>p:not(.eyebrow),.about-coverage-inner>div:last-child>p{color:#aaa8a2;font-size:13px;line-height:1.95;margin:0 0 17px}
+.about-principles{background:#131416;border-top:1px solid #302b21;border-bottom:1px solid #302b21;padding:88px 0 94px}
+.about-principle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:42px;border-top:1px solid #39342a;border-left:1px solid #39342a}
+.about-principle{padding:27px 28px 30px;border-right:1px solid #39342a;border-bottom:1px solid #39342a;min-height:205px}
+.about-principle>span,.about-services-list>div>span{color:#a48c5c;font-size:9px;letter-spacing:.15em}
+.about-principle h3{font:500 22px 'Playfair Display',serif;margin:24px 0 10px}
+.about-principle p{color:#aaa8a2;font-size:11px;line-height:1.85;margin:0}
+.about-services{display:grid;grid-template-columns:.85fr 1.15fr;gap:85px;padding-top:105px;padding-bottom:110px}
+.about-services-copy>p:not(.eyebrow){max-width:390px;margin:18px 0 25px}
+.about-services-list{border-top:1px solid #39342a}
+.about-services-list>div{display:grid;grid-template-columns:34px 1fr 18px;align-items:center;gap:12px;padding:17px 0;border-bottom:1px solid #39342a}
+.about-services-list>div p{font:500 17px 'Playfair Display',serif;color:#e7e2d8;margin:0}
+.about-services-list>div b{color:#c7a461;font-weight:400}
+.about-coverage{background:#151513;border-top:1px solid #302b21;border-bottom:1px solid #302b21;padding:83px 0}
+.about-coverage-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-coverage-inner>div:last-child>p{margin:0}
+.about-coverage-inner>div:last-child .about-coverage-note{font-size:10px;color:#8c877d;border-left:2px solid #c7a461;padding-left:13px;margin-top:17px}
+.about-cta{text-align:center;padding:94px 0 85px;background:radial-gradient(ellipse at 50% 100%,#282116,#0b0c0e 70%)}
+.about-cta h2{font:500 clamp(52px,7vw,76px)/1.02 'Playfair Display',serif;margin:0}
+.about-cta>div>p:not(.eyebrow){max-width:500px;color:#aaa8a2;font-size:13px;line-height:1.9;margin:20px auto 27px}
+.about-cta .hero-actions{justify-content:center}
+.about-cta .closing-contact{margin-left:auto;margin-right:auto}
+@media(max-width:800px){.about-intro,.about-services,.about-coverage-inner{grid-template-columns:1fr;gap:35px}.about-principle-grid{grid-template-columns:1fr}.about-principle{min-height:0}.about-services{padding-top:75px;padding-bottom:78px}}
+@media(max-width:600px){.about-hero{min-height:500px;background-position:58% center}.about-hero-content{padding-top:75px;padding-bottom:75px}.about-hero-content h1{font-size:62px}.about-intro{padding-top:72px;padding-bottom:75px;gap:22px}.about-intro h2,.about-services-copy h2,.about-coverage h2{font-size:41px}.about-principles{padding:68px 0 72px}.about-principle-grid{margin-top:30px}.about-principle{padding:22px}.about-principle h3{margin-top:16px}.about-coverage{padding:67px 0}.about-cta{padding:72px 0 65px}.about-cta h2{font-size:54px}.about-cta .hero-actions{align-items:center}.about-cta .hero-actions .button{width:100%;max-width:310px}}
