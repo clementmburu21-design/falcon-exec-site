@@ -210,3 +210,18 @@
 .about-cta .closing-contact{margin-left:auto;margin-right:auto}
 @media(max-width:800px){.about-intro,.about-services,.about-coverage-inner{grid-template-columns:1fr;gap:35px}.about-principle-grid{grid-template-columns:1fr}.about-principle{min-height:0}.about-services{padding-top:75px;padding-bottom:78px}}
 @media(max-width:600px){.about-hero{min-height:500px;background-position:58% center}.about-hero-content{padding-top:75px;padding-bottom:75px}.about-hero-content h1{font-size:62px}.about-intro{padding-top:72px;padding-bottom:75px;gap:22px}.about-intro h2,.about-services-copy h2,.about-coverage h2{font-size:41px}.about-principles{padding:68px 0 72px}.about-principle-grid{margin-top:30px}.about-principle{padding:22px}.about-principle h3{margin-top:16px}.about-coverage{padding:67px 0}.about-cta{padding:72px 0 65px}.about-cta h2{font-size:54px}.about-cta .hero-actions{align-items:center}.about-cta .hero-actions .button{width:100%;max-width:310px}}
+
+
+/* Image-led principle cards on Discover Falcon */
+.about-principle-grid{border:0;gap:18px}
+.about-principle{padding:0;min-height:0;background:#0b0c0e;border:1px solid #39342a;overflow:hidden;display:flex;flex-direction:column}
+.about-principle-image{height:190px;overflow:hidden;background:#202020;position:relative}
+.about-principle-image:after{content:'';position:absolute;inset:35% 0 0;background:linear-gradient(0deg,rgba(8,9,10,.55),transparent)}
+.about-principle-image img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.78);transition:transform .45s}
+.about-principle:hover .about-principle-image img{transform:scale(1.045)}
+.about-principle-content{padding:23px 24px 27px;flex:1}
+.about-principle-content>span{color:#a48c5c;font-size:9px;letter-spacing:.15em}
+.about-principle-content h3{font:500 21px/1.25 'Playfair Display',serif;margin:13px 0 9px}
+.about-principle-content p{color:#aaa8a2;font-size:11px;line-height:1.85;margin:0}
+@media(max-width:800px){.about-principle-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-principle-image{height:175px}}
+@media(max-width:560px){.about-principle-grid{grid-template-columns:1fr;gap:14px}.about-principle-image{height:205px}.about-principle-content{padding:21px}}
