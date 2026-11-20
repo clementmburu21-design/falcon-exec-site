@@ -17,12 +17,12 @@ const fleet = [
   { category: 'COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient and budget-conscious city mobility.', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz' },
 ]
 const services = [
-  ['01', 'Executive Chauffeur Services', 'Professional chauffeur-driven transport for executives, business meetings, VIP guests and personal journeys. We coordinate the vehicle and journey details around your schedule, with courteous service and clear communication.'],
-  ['02', 'Airport & Hotel Transfers', 'Pre-arranged airport and hotel pickups and drop-offs for individuals, families and business travellers. Share your flight details, arrival time, passenger count and destination so we can plan the transfer with you.'],
-  ['03', 'Premium Car Rentals', 'Vehicle hire options ranging from practical everyday cars to executive saloons and premium SUVs. Enquire for self-drive or chauffeur-driven arrangements, subject to vehicle availability and agreed hire terms.'],
-  ['04', 'Corporate & Delegation Travel', 'Coordinated transport enquiries for companies, NGOs, visiting teams, conferences and official delegations. We can discuss multi-vehicle schedules, airport movements and daily or multi-day assignments.'],
-  ['05', 'Weddings & Special Events', 'Elegant vehicle arrangements and transport coordination for weddings, private celebrations and important occasions. Discuss your preferred vehicle, event schedule, passenger movements and timings with our team.'],
-  ['06', 'Safari & Upcountry Travel', 'Transport arrangements for journeys beyond Nairobi, family travel, retreats and selected safari routes. Tell us your route, dates, passenger and luggage requirements so we can discuss a suitable vehicle.'],
+  ['01', 'Executive Chauffeur Services', 'Professional, discreet chauffeur-driven transport for executives, VIP guests, business meetings and personal journeys.', '/fleet/mercedes-s-class.jpg', 'Chauffeur beside a Mercedes-Benz executive sedan'],
+  ['02', 'Airport & Hotel Transfers', 'Pre-arranged pickups and drop-offs for JKIA, Wilson Airport, hotels, residences and private aviation terminals.', '/fleet/prado-white.jpg', 'Premium SUV prepared for airport transfer'],
+  ['03', 'Premium Car Hire', 'Vehicle options across economy, SUV and luxury categories, with self-drive or chauffeur-driven arrangements subject to availability.', '/fleet/mazda-cx5.jpg', 'Premium vehicle hire options'],
+  ['04', 'Corporate & Delegation Travel', 'Coordinated transport for company teams, visiting delegations, conferences, meetings and organisational assignments.', '/fleet/toyota-voxy.jpg', 'People carrier for corporate group transport'],
+  ['05', 'Weddings & Special Events', 'Elegant vehicle arrangements and transport coordination for weddings, celebrations and memorable occasions.', '/fleet/mercedes-s-class.jpg', 'Luxury vehicle for wedding transport'],
+  ['06', 'Safari & Upcountry Travel', 'Suitable vehicle arrangements for upcountry journeys, leisure travel and selected safari routes across Kenya.', '/fleet/prado-black.jpg', '4x4 vehicle for safari and upcountry travel'],
 ]
 
 function Heading({ eyebrow, title, text }) {
