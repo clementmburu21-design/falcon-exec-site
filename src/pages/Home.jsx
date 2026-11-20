@@ -6,6 +6,9 @@ const whatsapp = 'https://wa.me/254768000540?text=Hello%20Falcon%20Executive%20L
 const fleet = [
   { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A spacious 7-seater SUV with a commanding presence for executive and upcountry journeys.', image: '/fleet/prado-black.jpg', alt: 'Black Toyota Land Cruiser Prado' },
   { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A refined 4x4 option for VIP transfers, family travel and special occasions.', image: '/fleet/prado-white.jpg', alt: 'White Toyota Land Cruiser Prado' },
+  { category: 'LUXURY SUV', name: 'Range Rover', detail: 'A commanding luxury SUV option for executive journeys and special occasions, subject to confirmation.', image: '/fleet/prado-black.jpg', alt: 'Representative luxury black SUV' },
+  { category: 'FULL-SIZE 4×4', name: 'Toyota Land Cruiser 200 Series', detail: 'A spacious full-size 4×4 option for executive and upcountry travel, subject to confirmation.', image: '/fleet/prado-white.jpg', alt: 'Representative Toyota Land Cruiser 4x4' },
+  { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz E-Class', detail: 'A refined executive saloon for business travel and airport transfers, subject to confirmation.', image: '/fleet/mercedes-c-class.jpg', alt: 'Representative Mercedes-Benz executive saloon' },
   { category: 'LUXURY SALOON', name: 'Mercedes-Benz S-Class', detail: 'A sophisticated choice for executive guests, VIP transfers and formal occasions.', image: '/fleet/mercedes-s-class.jpg', alt: 'Mercedes-Benz S-Class' },
   { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz C-Class', detail: 'Comfortable executive transport for meetings, airport transfers and city travel.', image: '/fleet/mercedes-c-class.jpg', alt: 'Mercedes-Benz C-Class' },
   { category: 'CROSSOVER SUV', name: 'Mazda CX-5', detail: 'A versatile and comfortable SUV for everyday travel and weekend journeys.', image: '/fleet/mazda-cx5.jpg', alt: 'Mazda CX-5' },
@@ -14,12 +17,12 @@ const fleet = [
   { category: 'COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient and budget-conscious city mobility.', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz' },
 ]
 const services = [
-  ['01', 'Executive Chauffeur', 'Professional chauffeur arrangements for business meetings, executives and distinguished guests.'],
-  ['02', 'Airport Transfers', 'Comfortable pickups and drop-offs for JKIA, Wilson Airport, hotels and private residences.'],
-  ['03', 'Premium Car Hire', 'Self-drive and chauffeur-driven vehicle options for personal and business travel.'],
-  ['04', 'Corporate & Delegation Travel', 'Coordinated transport for companies, visiting teams, conferences and official movements.'],
-  ['05', 'Weddings & Special Events', 'Elegant vehicles and transport coordination for weddings, celebrations and important occasions.'],
-  ['06', 'Safari & Upcountry Travel', 'Vehicle arrangements for journeys beyond Nairobi, leisure travel and selected safari routes.'],
+  ['01', 'Executive Chauffeur Services', 'Professional chauffeur-driven transport for executives, business meetings, VIP guests and personal journeys. We coordinate the vehicle and journey details around your schedule, with courteous service and clear communication.'],
+  ['02', 'Airport & Hotel Transfers', 'Pre-arranged airport and hotel pickups and drop-offs for individuals, families and business travellers. Share your flight details, arrival time, passenger count and destination so we can plan the transfer with you.'],
+  ['03', 'Premium Car Rentals', 'Vehicle hire options ranging from practical everyday cars to executive saloons and premium SUVs. Enquire for self-drive or chauffeur-driven arrangements, subject to vehicle availability and agreed hire terms.'],
+  ['04', 'Corporate & Delegation Travel', 'Coordinated transport enquiries for companies, NGOs, visiting teams, conferences and official delegations. We can discuss multi-vehicle schedules, airport movements and daily or multi-day assignments.'],
+  ['05', 'Weddings & Special Events', 'Elegant vehicle arrangements and transport coordination for weddings, private celebrations and important occasions. Discuss your preferred vehicle, event schedule, passenger movements and timings with our team.'],
+  ['06', 'Safari & Upcountry Travel', 'Transport arrangements for journeys beyond Nairobi, family travel, retreats and selected safari routes. Tell us your route, dates, passenger and luggage requirements so we can discuss a suitable vehicle.'],
 ]
 
 function Heading({ eyebrow, title, text }) {
@@ -35,7 +38,7 @@ export default function Home() {
         <h1>Arrive with<br /><em>distinction.</em></h1>
         <p className="hero-copy">Executive transport, premium car hire and professional chauffeur services — thoughtfully arranged around your journey.</p>
         <div className="hero-actions">
-          <a className="button button-gold" href={whatsapp} target="_blank" rel="noopener noreferrer">ENQUIRE ON WHATSAPP <span>↗</span></a>
+          <a className="button button-gold" href={whatsapp} target="_blank" rel="noopener noreferrer">ENQUIRE ON WHATSAPP <span>↗</span></a><a className="button button-outline" href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Transport%20Enquiry">ENQUIRE BY EMAIL <span>↗</span></a>
           <a className="button button-outline" href="#services">EXPLORE OUR SERVICES</a>
         </div>
         <div className="hero-note"><span className="hero-note-line" /> PRIVATE JOURNEYS. PROFESSIONAL SERVICE.</div>
@@ -55,7 +58,7 @@ export default function Home() {
         <article className="service-card" key={number}>
           <span className="service-number">{number}</span><div className="service-mark" aria-hidden="true">✳</div>
           <h3>{title}</h3><p>{text}</p>
-          <a href={whatsapp} target="_blank" rel="noopener noreferrer">MAKE AN ENQUIRY <span>↗</span></a>
+          <div className="service-card-actions"><a href={whatsapp} target="_blank" rel="noopener noreferrer">WHATSAPP <span>↗</span></a><a href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Service%20Enquiry">EMAIL <span>↗</span></a></div>
         </article>
       )}</div>
     </section>
@@ -113,7 +116,7 @@ export default function Home() {
     <section className="closing-cta"><div className="page-shell closing-inner">
       <p className="eyebrow">YOUR JOURNEY STARTS HERE</p><h2>Make your next move<br /><em>the right one.</em></h2>
       <p>Tell us where you need to go, when you need to travel and the vehicle or service you have in mind.</p>
-      <a className="button button-gold" href={whatsapp} target="_blank" rel="noopener noreferrer">PLAN YOUR JOURNEY ON WHATSAPP <span>↗</span></a>
+      <div className="hero-actions"><a className="button button-gold" href={whatsapp} target="_blank" rel="noopener noreferrer">PLAN ON WHATSAPP <span>↗</span></a><a className="button button-outline" href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Transport%20Enquiry">EMAIL AN ENQUIRY <span>↗</span></a><Link className="button button-outline" to="/quote">REQUEST A QUOTATION <span>↗</span></Link></div>
       <div className="closing-contact"><span>CALL US</span><a href="tel:+254768000540">+254 768 000 540</a><span>EMAIL</span><a href="mailto:falconexecutivetours@gmail.com">falconexecutivetours@gmail.com</a></div>
     </div></section>
   </div>
