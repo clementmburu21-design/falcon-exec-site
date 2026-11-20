@@ -13,7 +13,7 @@ export default function Header() {
     { name: 'Fleet', path: '/fleet' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Booking', path: '/book' },
+    { name: 'Request a Quote', path: '/quote' },
   ];
 
   return (
@@ -52,10 +52,10 @@ export default function Header() {
           ))}
 
           <Link
-            to="/book"
-            className="bg-[#C6A45C] text-black px-5 py-2.5 rounded-sm font-semibold text-sm hover:bg-[#D9B96F] transition"
+            to="/quote"
+            className="bg-[#C6A45C" text-black px-5 py-2.5 rounded-sm font-semibold text-sm hover:bg-[#D9B96F] transition"
           >
-            Book Now
+            Request a Quote
           </Link>
         </nav>
 
@@ -83,7 +83,7 @@ export default function Header() {
           ))}
 
           <Link
-            to="/book"
+            to="/quote"
             onClick={() => setMenuOpen(false)}
             className="bg-[#C6A45C] text-black text-center py-3 font-semibold"
           >
