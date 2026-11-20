@@ -6,7 +6,7 @@
 *{box-sizing:border-box}html,body,#root{min-height:100%;margin:0}body{background:#090a0c;color:#f5f2eb}a{text-decoration:none}::selection{background:#c5a15a;color:#090a0c}
 .home-page{overflow:hidden;background:#0b0c0e}.page-shell{width:min(1180px,calc(100% - 56px));margin:0 auto}
 .hero-section{min-height:690px;height:min(760px,calc(100vh - 82px));position:relative;display:flex;align-items:center;background:#111;isolation:isolate}
-.hero-image{position:absolute;inset:0;z-index:-2;background-image:url('/fleet/prado-black.jpg');background-size:cover;background-position:center 56%}
+.hero-image{position:absolute;inset:0;z-index:-2;background-image:url('/fleet/falcon-hero.webp');background-size:cover;background-position:center 56%}
 .hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,6,8,.96) 0%,rgba(5,6,8,.82) 38%,rgba(5,6,8,.24) 76%,rgba(5,6,8,.1) 100%),linear-gradient(0deg,rgba(5,6,8,.72),transparent 45%)}
 .hero-content{padding-top:28px;padding-bottom:60px}.hero-kicker,.eyebrow,.intro-label{color:#c7a461;letter-spacing:.22em;font-size:10px;font-weight:700}
 .hero-kicker{display:flex;align-items:center;gap:12px;margin-bottom:28px}.hero-kicker span{width:30px;height:1px;background:#c7a461}
