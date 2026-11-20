@@ -328,3 +328,8 @@
 .quote-form .booking-fields label input,.quote-form .booking-fields label select,.quote-form .booking-fields label textarea{box-sizing:border-box}
 @media(max-width:850px){.quote-layout{grid-template-columns:1fr;gap:35px;padding-top:55px;padding-bottom:65px}.quote-aside{position:static}}
 @media(max-width:560px){.quote-hero{padding:62px 20px 55px}.quote-layout{width:calc(100% - 32px)}.quote-form{padding:21px 16px}.quote-form .booking-fields{grid-template-columns:1fr}.quote-form .booking-full-field{grid-column:auto}}
+
+.vehicle-enquiry-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.vehicle-enquiry-actions .fleet-gold-button{font-size:8px;padding:13px 15px}
+.vehicle-email-button{background:transparent;color:#d0ae70}
+.vehicle-email-button:hover{background:#d0ae70;color:#101010}
