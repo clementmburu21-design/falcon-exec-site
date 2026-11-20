@@ -54,11 +54,16 @@ export default function Home() {
 
     <section className="section-block page-shell" id="services">
       <Heading eyebrow="WHAT WE DO" title="Mobility, made exceptional." text="Flexible transport solutions for business, leisure and life's important moments." />
-      <div className="services-grid">{services.map(([number, title, text]) =>
+      <div className="services-grid">{services.map(([number, title, text, image, alt]) =>
         <article className="service-card" key={number}>
-          <span className="service-number">{number}</span><div className="service-mark" aria-hidden="true">✳</div>
-          <h3>{title}</h3><p>{text}</p>
-          <div className="service-card-actions"><a href={whatsapp} target="_blank" rel="noopener noreferrer">WHATSAPP <span>↗</span></a><a href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Service%20Enquiry">EMAIL <span>↗</span></a></div>
+          <div className="service-card-image"><img src={image} alt={alt} loading="lazy" /></div>
+          <div className="service-card-content">
+            <span className="service-number">{number}</span><h3>{title}</h3><p>{text}</p>
+            <div className="service-card-actions">
+              <a href={whatsapp} target="_blank" rel="noopener noreferrer">WHATSAPP <span>↗</span></a>
+              <a href={`mailto:falconexecutivetours@gmail.com?subject=${encodeURIComponent('Enquiry: ' + title)}&body=${encodeURIComponent('Hello Falcon Executive Logistics, I would like to enquire about ' + title + '. Please contact me with further details.')}`}>EMAIL <span>↗</span></a>
+            </div>
+          </div>
         </article>
       )}</div>
     </section>
