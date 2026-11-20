@@ -1,23 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+const services = [
+  { no:'01', title:'Executive Chauffeur Services', image:'/fleet/mercedes-s-class.jpg', alt:'Luxury executive saloon', intro:'Professional chauffeur-driven transport for executives, VIP guests and private clients.', detail:'Arrange a chauffeur and vehicle for business meetings, hotel movements, personal appointments and planned itineraries. Share your schedule and preferred vehicle category so we can discuss a suitable arrangement.', points:['Executive and VIP journeys','Business meetings and appointments','Dedicated driver arrangements, subject to availability'] },
+  { no:'02', title:'Airport & Hotel Transfers', image:'/fleet/prado-black.jpg', alt:'Premium SUV for airport transfer', intro:'Pre-arranged transfers between airports, hotels, offices and private addresses.', detail:'We coordinate pick-up and drop-off requirements around your flight or travel schedule. Provide your airport, flight details, arrival time, passenger count and destination when requesting a quote.', points:['JKIA and Wilson Airport transfers','Hotel, residence and office drop-offs','Individual, family and business travel'] },
+  { no:'03', title:'Premium Car Rentals', image:'/fleet/mazda-cx5.jpg', alt:'Premium crossover SUV', intro:'Vehicle hire options for everyday mobility, executive travel and special occasions.', detail:'Ask about self-drive or chauffeur-driven hire across a selection of compact cars, saloons, SUVs and people carriers. Vehicle specifications, hire terms, rates and availability are confirmed individually before booking.', points:['Self-drive and chauffeured options','Economy, executive and SUV categories','Daily and multi-day hire enquiries'] },
+  { no:'04', title:'Corporate & Delegation Travel', image:'/fleet/toyota-voxy.jpg', alt:'People carrier for group travel', intro:'Transport coordination for companies, NGOs, visiting teams and official delegations.', detail:'Discuss airport movements, meeting schedules, multi-vehicle requirements, conferences and daily or multi-day assignments. We can prepare a quotation based on your itinerary, passenger numbers and vehicle categories.', points:['Corporate and staff movements','Visiting teams and delegations','Conferences, meetings and events'] },
+  { no:'05', title:'Weddings & Special Events', image:'/fleet/mercedes-s-class.jpg', alt:'Luxury saloon for a special occasion', intro:'Elegant vehicle arrangements for weddings, celebrations and important occasions.', detail:'Tell us about your event date, venue, timings, passenger movements and preferred vehicle style. We can discuss suitable transport arrangements for the couple, family, guests and event schedule.', points:['Wedding and bridal transport enquiries','Private celebrations and formal occasions','Planned guest movements'] },
+  { no:'06', title:'Safari & Upcountry Travel', image:'/fleet/prado-white.jpg', alt:'Four-wheel-drive SUV for upcountry travel', intro:'Transport arrangements for journeys beyond Nairobi and selected safari routes.', detail:'Share your route, travel dates, passenger and luggage requirements. We can discuss suitable 4×4 and other vehicle options for upcountry travel, retreats and leisure journeys, subject to availability and route suitability.', points:['Upcountry and intercity journeys','Selected safari and leisure routes','Family, group and multi-day travel'] },
+]
 
 export default function Services() {
-  return (
-    <div className="max-w-6xl mx-auto px-6 py-16">
-      <h2 className="text-3xl font-bold text-falcon-gold mb-6">Our Services</h2>
-      <div className="grid md:grid-cols-3 gap-6">
-        <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
-          <h3 className="text-xl text-falcon-gold mb-2">Executive Chauffeur Services</h3>
-          <p className="text-gray-300 text-sm">Discreet, professional chauffeurs and premium vehicles for government delegations, business meetings, and corporate events.</p>
-        </div>
-        <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
-          <h3 className="text-xl text-falcon-gold mb-2">Airport & Hotel Transfers</h3>
-          <p className="text-gray-300 text-sm">Real-time flight tracking and comfortable transfers to and from JKIA, Wilson, and Mombasa airports.</p>
-        </div>
-        <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
-          <h3 className="text-xl text-falcon-gold mb-2">Premium Car Rentals</h3>
-          <p className="text-gray-300 text-sm">A modern fleet of luxury sedans, SUVs, and tour jeeps for self-drive or long-term leasing.</p>
-        </div>
-      </div>
-    </div>
-  )
+  return <main className="services-page">
+    <section className="services-hero"><div className="fleet-page-shell"><p className="fleet-eyebrow">FALCON EXECUTIVE LOGISTICS · PREMIUM MOBILITY</p><h1>Services shaped<br/><em>around your journey.</em></h1><p>Executive mobility and transport arrangements for business, travel and life’s important occasions, headquartered in Nairobi and serving clients nationwide.</p><div className="services-hero-actions"><Link className="fleet-gold-button" to="/quote">REQUEST A QUOTATION <span>↗</span></Link><a className="services-email-button" href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Services%20Enquiry">EMAIL AN ENQUIRY <span>↗</span></a></div></div></section>
+    <section className="services-intro fleet-page-shell"><p className="fleet-eyebrow">WHAT WE ARRANGE</p><h2>One partner. Many ways to move.</h2><p>Every enquiry is different. Tell us your dates, destinations, passenger needs and preferred service, and our team will discuss a suitable transport arrangement with you.</p></section>
+    <section className="services-catalogue fleet-page-shell">{services.map(s=><article className="service-detail-card" key={s.no}><div className="service-detail-image"><img src={s.image} alt={s.alt} loading="lazy"/></div><div className="service-detail-copy"><span>{s.no} / FALCON SERVICES</span><h2>{s.title}</h2><h3>{s.intro}</h3><p>{s.detail}</p><ul>{s.points.map(p=><li key={p}>{p}</li>)}</ul><div className="service-detail-actions"><Link to="/quote" className="service-detail-quote">REQUEST A QUOTATION ↗</Link><a href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Service%20Enquiry">EMAIL ENQUIRY ↗</a></div></div></article>)}</section>
+    <section className="services-bottom"><p className="fleet-eyebrow">LET’S DISCUSS YOUR REQUIREMENTS</p><h2>Tell us where you need to go.</h2><p>Request a quotation for your preferred vehicle, hire mode and dates.</p><Link className="fleet-gold-button" to="/quote">REQUEST A QUOTATION <span>↗</span></Link></section>
+  </main>
 }
