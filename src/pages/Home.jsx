@@ -6,8 +6,8 @@ const whatsapp = 'https://wa.me/254768000540?text=Hello%20Falcon%20Executive%20L
 const fleet = [
   { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A spacious 7-seater SUV with a commanding presence for executive and upcountry journeys.', image: '/fleet/safari-upcountry.webp', alt: 'Black Toyota Land Cruiser Prado' },
   { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado', detail: 'A refined 4x4 option for VIP transfers, family travel and special occasions.', image: '/fleet/airport-transfers.webp', alt: 'White Toyota Land Cruiser Prado' },
-  { category: 'LUXURY SUV', name: 'Range Rover', detail: 'A commanding luxury SUV option for executive journeys and special occasions, subject to confirmation.', image: '/fleet/prado-black.jpg', alt: 'Representative luxury black SUV' },
-  { category: 'FULL-SIZE 4×4', name: 'Toyota Land Cruiser 200 Series', detail: 'A spacious full-size 4×4 option for executive and upcountry travel, subject to confirmation.', image: '/fleet/prado-white.jpg', alt: 'Representative Toyota Land Cruiser 4x4' },
+  { category: 'LUXURY SUV', name: 'Range Rover', detail: 'A commanding luxury SUV option for executive journeys and special occasions, subject to confirmation.', image: '/fleet/safari-upcountry.webp', alt: 'Representative luxury black SUV' },
+  { category: 'FULL-SIZE 4×4', name: 'Toyota Land Cruiser 200 Series', detail: 'A spacious full-size 4×4 option for executive and upcountry travel, subject to confirmation.', image: '/fleet/airport-transfers.webp', alt: 'Representative Toyota Land Cruiser 4x4' },
   { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz E-Class', detail: 'A refined executive saloon for business travel and airport transfers, subject to confirmation.', image: '/fleet/mercedes-c-class.jpg', alt: 'Representative Mercedes-Benz executive saloon' },
   { category: 'LUXURY SALOON', name: 'Mercedes-Benz S-Class', detail: 'A sophisticated choice for executive guests, VIP transfers and formal occasions.', image: '/fleet/chauffeur.webp', alt: 'Mercedes-Benz S-Class' },
   { category: 'LUXURY SUV', name: 'Range Rover', detail: 'A prestigious luxury SUV for VIP transfers, executive travel and special occasions.', image: '/fleet/prado-black.jpg', alt: 'Representative luxury black SUV' },
@@ -20,10 +20,10 @@ const fleet = [
   { category: 'COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient and budget-conscious city mobility.', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz' },
 ]
 const services = [
-  ['01', ♙, 'Executive Chauffeur Services', 'Professional, discreet chauffeur-driven transport for executives, VIP guests, business meetings and personal journeys.', '/fleet/mercedes-s-class.jpg', 'Chauffeur beside a Mercedes-Benz executive sedan'],
+  ['01', ♙, 'Executive Chauffeur Services', 'Professional, discreet chauffeur-driven transport for executives, VIP guests, business meetings and personal journeys.', '/fleet/chauffeur.webp', 'Chauffeur beside a Mercedes-Benz executive sedan'],
   ['02', ✈, 'Airport & Hotel Transfers', 'Pre-arranged pickups and drop-offs for JKIA, Wilson Airport, hotels, residences and private aviation terminals.', '/fleet/prado-white.jpg', 'Premium SUV prepared for airport transfer'],
-  ['03', ▱, 'Premium Car Hire', 'Vehicle options across economy, SUV and luxury categories, with self-drive or chauffeur-driven arrangements subject to availability.', '/fleet/mazda-cx5.jpg', 'Premium vehicle hire options'],
-  ['04', ♟, 'Corporate & Delegation Travel', 'Coordinated transport for company teams, visiting delegations, conferences, meetings and organisational assignments.', '/fleet/toyota-voxy.jpg', 'People carrier for corporate group transport'],
+  ['03', ▱, 'Premium Car Hire', 'Vehicle options across economy, SUV and luxury categories, with self-drive or chauffeur-driven arrangements subject to availability.', '/fleet/premium-car-hire.webp', 'Premium vehicle hire options'],
+  ['04', ♟, 'Corporate & Delegation Travel', 'Coordinated transport for company teams, visiting delegations, conferences, meetings and organisational assignments.', '/fleet/corporate-delegation.webp', 'People carrier for corporate group transport'],
   ['05', ♧, 'Weddings & Special Events', 'Elegant vehicle arrangements and transport coordination for weddings, celebrations and memorable occasions.', '/fleet/weddings-events.webp', 'Luxury vehicle for wedding transport'],
   ['06', ◎, 'Safari & Upcountry Travel', 'Suitable vehicle arrangements for upcountry journeys, leisure travel and selected safari routes across Kenya.', '/fleet/prado-black.jpg', '4x4 vehicle for safari and upcountry travel'],
 ]
