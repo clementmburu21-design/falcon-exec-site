@@ -4,15 +4,19 @@ import { Link } from 'react-router-dom'
 const whatsapp = 'https://wa.me/254768000540?text=Hello%20Falcon%20Executive%20Logistics%2C%20I%27d%20like%20to%20make%20a%20booking%20enquiry.'
 
 const fleet = [
-  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado (Black)', detail: 'A spacious 7-seater SUV with a commanding presence for executive and upcountry journeys.', image: '/fleet/prado-black.jpg', alt: 'Black Toyota Land Cruiser Prado' },
-  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado (White)', detail: 'A refined 4×4 option for VIP transfers, family travel and special occasions.', image: '/fleet/prado-white.jpg', alt: 'White Toyota Land Cruiser Prado' },
-  { category: 'LUXURY SUV', name: 'Range Rover', detail: 'A commanding luxury SUV option for executive journeys and special occasions, subject to confirmation.', image: '/fleet/prado-black.jpg', alt: 'Representative premium black luxury SUV; exact Range Rover model confirmed on enquiry' },
-  { category: 'FULL-SIZE 4×4', name: 'Toyota Land Cruiser 200 Series', detail: 'A spacious full-size 4×4 option for executive and upcountry travel, subject to confirmation.', image: '/fleet/prado-white.jpg', alt: 'Representative Toyota Land Cruiser 4×4; exact 200 Series vehicle confirmed on enquiry' },
-  { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz E-Class', detail: 'A refined executive saloon for business travel and airport transfers, subject to confirmation.', image: '/fleet/mercedes-c-class.jpg', alt: 'Representative Mercedes-Benz executive saloon; exact E-Class specification confirmed on enquiry' },
+  { category: 'ULTRA-LUXURY SUV', name: 'Lexus LX 570 (Black)', detail: 'A commanding luxury SUV for VIP travel and premium occasions.', image: '/fleet/lexus-lx570-black.webp', alt: 'Black Lexus LX 570' },
+  { category: 'LUXURY SUV', name: 'Range Rover Vogue (White)', detail: 'A refined full-size luxury SUV for executive journeys.', image: '/fleet/range-rover-vogue-white.webp', alt: 'White Range Rover Vogue' },
+  { category: 'LUXURY SUV', name: 'Range Rover (Black)', detail: 'A distinctive luxury SUV for premium travel and special occasions.', image: '/fleet/range-rover-black.webp', alt: 'Black Range Rover' },
+  { category: 'FULL-SIZE 4×4', name: 'Toyota Land Cruiser 200 Series V8', detail: 'A spacious full-size 4×4 for executive and upcountry journeys.', image: '/fleet/land-cruiser-200-v8-white.webp', alt: 'White Toyota Land Cruiser 200 Series V8' },
+  { category: 'PREMIUM SUV', name: 'Toyota Land Cruiser Prado TXL (White)', detail: 'A refined 4×4 option for VIP transfers, family travel and special occasions.', image: '/fleet/prado-txl-white.webp', alt: 'White Toyota Land Cruiser Prado TXL' },
   { category: 'LUXURY SALOON', name: 'Mercedes-Benz S-Class', detail: 'A sophisticated choice for executive guests, VIP transfers and formal occasions.', image: '/fleet/mercedes-s-class.jpg', alt: 'Mercedes-Benz S-Class' },
-  { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz C-Class', detail: 'Comfortable executive transport for meetings, airport transfers and city travel.', image: '/fleet/mercedes-c-class.jpg', alt: 'Mercedes-Benz C-Class' },
-  { category: 'CROSSOVER SUV', name: 'Mazda CX-5', detail: 'A versatile and comfortable SUV for everyday travel and weekend journeys.', image: '/fleet/mazda-cx5.jpg', alt: 'Mazda CX-5' },
-  { category: 'PEOPLE CARRIER', name: 'Toyota Voxy', detail: 'A practical option for families, small groups and comfortable transfers.', image: '/fleet/toyota-voxy.jpg', alt: 'Toyota Voxy' },
+  { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz E-Class', detail: 'A refined executive saloon for business travel and airport transfers.', image: '/fleet/mercedes-e-class-white.webp', alt: 'White Mercedes-Benz E-Class' },
+  { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz C200', detail: 'Comfortable executive transport for meetings, airport transfers and city travel.', image: '/fleet/mercedes-c200-silver.webp', alt: 'Silver Mercedes-Benz C200' },
+  { category: 'COUPE', name: 'Mercedes-Benz C180 Coupe', detail: 'A sporty two-door Mercedes for stylish city travel and special occasions.', image: '/fleet/mercedes-c180-coupe-black.webp', alt: 'Black Mercedes-Benz C180 Coupe' },
+  { category: 'LUXURY 4×4', name: 'Mercedes-Benz G350d', detail: 'An iconic luxury 4×4 for distinctive executive arrivals.', image: '/fleet/mercedes-g350d-grey.webp', alt: 'Mercedes-Benz G350d' },
+  { category: 'LUXURY MPV', name: 'Toyota Vellfire', detail: 'A premium people carrier for family, VIP and group transfers.', image: '/fleet/toyota-vellfire-black.webp', alt: 'Black Toyota Vellfire' },
+  { category: 'PEOPLE CARRIER', name: 'Toyota Voxy Hybrid', detail: 'A practical hybrid people carrier for families and small groups.', image: '/fleet/toyota-voxy-hybrid-black.webp', alt: 'Black Toyota Voxy Hybrid' },
+  { category: 'CROSSOVER SUV', name: 'Mazda CX-5 (Black)', detail: 'A versatile and comfortable SUV for everyday travel and weekend journeys.', image: '/fleet/mazda-cx5-black.webp', alt: 'Black Mazda CX-5' },
   { category: 'ESTATE', name: 'Toyota Fielder', detail: 'A dependable, economical choice for practical city and business travel.', image: '/fleet/toyota-fielder.jpg', alt: 'Toyota Fielder' },
   { category: 'COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient and budget-conscious city mobility.', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz' },
 ]
