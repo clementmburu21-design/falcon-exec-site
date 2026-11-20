@@ -47,7 +47,7 @@ export default function Fleet() {
         {filters.map(filter => <button key={filter} type="button" className={active === filter ? 'active' : ''} onClick={() => setActive(filter)} aria-pressed={active === filter}>{filter}</button>)}
       </div>
       <div className="fleet-catalogue-grid">
-        {shown.map((vehicle, index) => <article className="fleet-listing" key={vehicle.image}>
+        {shown.map((vehicle, index) => <article className="fleet-listing" key={vehicle.slug}>
           <div className="fleet-listing-image"><img src={vehicle.image} alt={vehicle.alt} loading="lazy" /><span>{vehicle.label}</span></div>
           <div className="fleet-listing-info"><p className="fleet-listing-number">FALCON FLEET · {(index + 1).toString().padStart(2, '0')}</p><h3>{vehicle.name}</h3><p>{vehicle.detail}</p>
             <div className="fleet-listing-actions"><Link className="fleet-view-link" to={`/fleet/${vehicle.slug}`}>VIEW DETAILS <span>→</span></Link><button type="button" className="fleet-enquire" onClick={() => enquire(vehicle)}>WHATSAPP ENQUIRY <span>↗</span></button></div>
@@ -67,6 +67,6 @@ export default function Fleet() {
       </div>
     </section>
 
-    <section className="fleet-bottom-cta"><p className="fleet-eyebrow">LET'S PLAN YOUR JOURNEY</p><h2>Not sure what you need?</h2><p>Tell us your itinerary, passenger needs and preferred travel dates. We'll help you explore suitable options.</p><a className="fleet-gold-button" href="https://wa.me/254768000540?text=Hello%20Falcon%20Executive%20Logistics%2C%20please%20help%20me%20choose%20a%20vehicle%20for%20my%20journey.">SPEAK TO OUR TEAM <span>↗</span></a></section>
+    <section className="fleet-bottom-cta"><p className="fleet-eyebrow">LET'S PLAN YOUR JOURNEY</p><h2>Not sure what you need?</h2><p>Tell us your itinerary, passenger needs and preferred travel dates. We'll help you explore suitable options.</p><div className="fleet-cta-actions"><Link className="fleet-gold-button" to="/quote">REQUEST A QUOTATION <span>↗</span></Link><a className="fleet-email-button" href="mailto:falconexecutivetours@gmail.com?subject=Fleet%20Enquiry">EMAIL AN ENQUIRY <span>↗</span></a></div></section>
   </div>
 }
