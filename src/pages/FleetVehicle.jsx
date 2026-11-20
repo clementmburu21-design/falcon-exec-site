@@ -30,7 +30,7 @@ export default function FleetVehicle() {
         <h1>{vehicle.name}</h1>
         <p>{vehicle.detail}</p>
         <p className="vehicle-detail-note">Contact our team to confirm the exact vehicle, specifications, availability, rates and hire terms for your journey.</p>
-        <a className="fleet-gold-button" href={enquiryUrl} target="_blank" rel="noreferrer">ENQUIRE ON WHATSAPP <span>↗</span></a>
+        <div className="vehicle-enquiry-actions"><a className="fleet-gold-button" href={enquiryUrl} target="_blank" rel="noreferrer">WHATSAPP ENQUIRY <span>↗</span></a><a className="fleet-gold-button vehicle-email-button" href={`mailto:falconexecutivetours@gmail.com?subject=${encodeURIComponent("Fleet enquiry: " + vehicle.name)}&body=${encodeURIComponent(message)}`}>EMAIL ENQUIRY <span>↗</span></a></div>
         <Link className="vehicle-back-link" to="/fleet">Explore other vehicles</Link>
       </div>
     </section>
