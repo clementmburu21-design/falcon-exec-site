@@ -17,7 +17,7 @@ export const vehicles = [
   { slug: 'mazda-cx5', name: 'Mazda CX-5', category: 'SUVs', label: 'Crossover SUV', image: '/fleet/mazda-cx5-black.webp', alt: 'Black Mazda CX-5', detail: 'A versatile crossover suited to everyday mobility and weekend journeys.' },
   { slug: 'toyota-voxy', name: 'Toyota Voxy', category: 'Group travel', label: 'People carrier', image: '/fleet/toyota-voxy.jpg', alt: 'Toyota Voxy', detail: 'A practical people carrier for families, small groups and comfortable transfers.' },
   { slug: 'toyota-fielder', name: 'Toyota Fielder', category: 'Everyday', label: 'Estate', image: '/fleet/toyota-fielder.jpg', alt: 'Toyota Fielder', detail: 'A practical option for everyday city travel and business errands.' },
-  { slug: 'toyota-vitz', name: 'Toyota Vitz', category: 'Everyday', label: 'Compact', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz', detail: 'A compact choice for convenient, economical city mobility.' },
+  { slug: 'bmw-x5', name: 'BMW X5', category: 'SUVs', label: 'Luxury crossover SUV', image: '/fleet/toyota-vitz.jpg', alt: 'BMW X5', detail: 'A premium performance SUV combining comfort, presence and versatile everyday capability.' },
 ]
 
 const filters = ['All vehicles', 'Luxury', 'Executive', 'SUVs', 'Group travel', 'Everyday']
