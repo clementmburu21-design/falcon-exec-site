@@ -10,6 +10,9 @@ const fleet = [
   { category: 'FULL-SIZE 4×4', name: 'Toyota Land Cruiser 200 Series', detail: 'A spacious full-size 4×4 option for executive and upcountry travel, subject to confirmation.', image: '/fleet/prado-white.jpg', alt: 'Representative Toyota Land Cruiser 4x4' },
   { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz E-Class', detail: 'A refined executive saloon for business travel and airport transfers, subject to confirmation.', image: '/fleet/mercedes-c-class.jpg', alt: 'Representative Mercedes-Benz executive saloon' },
   { category: 'LUXURY SALOON', name: 'Mercedes-Benz S-Class', detail: 'A sophisticated choice for executive guests, VIP transfers and formal occasions.', image: '/fleet/mercedes-s-class.jpg', alt: 'Mercedes-Benz S-Class' },
+  { category: 'LUXURY SUV', name: 'Range Rover', detail: 'A prestigious luxury SUV for VIP transfers, executive travel and special occasions.', image: '/fleet/prado-black.jpg', alt: 'Representative luxury black SUV' },
+  { category: 'LUXURY 4×4', name: 'Toyota Land Cruiser 200 Series', detail: 'A full-size 4×4 option for executive journeys, longer routes and group travel.', image: '/fleet/prado-white.jpg', alt: 'Representative Toyota Land Cruiser 4x4' },
+  { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz E-Class', detail: 'A refined saloon for business meetings, airport transfers and city travel.', image: '/fleet/mercedes-c-class.jpg', alt: 'Representative Mercedes-Benz executive saloon' },
   { category: 'EXECUTIVE SALOON', name: 'Mercedes-Benz C-Class', detail: 'Comfortable executive transport for meetings, airport transfers and city travel.', image: '/fleet/mercedes-c-class.jpg', alt: 'Mercedes-Benz C-Class' },
   { category: 'CROSSOVER SUV', name: 'Mazda CX-5', detail: 'A versatile and comfortable SUV for everyday travel and weekend journeys.', image: '/fleet/mazda-cx5.jpg', alt: 'Mazda CX-5' },
   { category: 'PEOPLE CARRIER', name: 'Toyota Voxy', detail: 'A practical option for families, small groups and comfortable transfers.', image: '/fleet/toyota-voxy.jpg', alt: 'Toyota Voxy' },
@@ -38,7 +41,7 @@ export default function Home() {
         <h1>Arrive with<br /><em>distinction.</em></h1>
         <p className="hero-copy">Executive transport, premium car hire and professional chauffeur services — thoughtfully arranged around your journey.</p>
         <div className="hero-actions">
-          <a className="button button-gold" href={whatsapp} target="_blank" rel="noopener noreferrer">ENQUIRE ON WHATSAPP <span>↗</span></a><a className="button button-outline" href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Transport%20Enquiry">ENQUIRE BY EMAIL <span>↗</span></a>
+          <a className="button button-gold" href={whatsapp} target="_blank" rel="noopener noreferrer">ENQUIRE ON WHATSAPP <span>↗</span></a><a className="button button-outline" href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Transport%20Enquiry">EMAIL US <span>↗</span></a><a className="button button-outline" href="mailto:falconexecutivetours@gmail.com?subject=Falcon%20Transport%20Enquiry">ENQUIRE BY EMAIL <span>↗</span></a>
           <a className="button button-outline" href="#services">EXPLORE OUR SERVICES</a>
         </div>
         <div className="hero-note"><span className="hero-note-line" /> PRIVATE JOURNEYS. PROFESSIONAL SERVICE.</div>
@@ -70,7 +73,7 @@ export default function Home() {
 
     <section className="fleet-section"><div className="page-shell">
       <div className="fleet-heading-row"><Heading eyebrow="THE FLEET" title="A vehicle for every occasion." text="Browse a selection of vehicles we can arrange for executive, family and everyday travel. Ask us about the right option for your journey." />
-        <a className="text-link" href={whatsapp} target="_blank" rel="noopener noreferrer">REQUEST A VEHICLE <span>↗</span></a>
+        <Link className="text-link" to="/quote">REQUEST A QUOTATION <span>↗</span></Link>
       </div>
       <div className="fleet-grid">{fleet.map(vehicle =>
         <article className="fleet-card" key={vehicle.name + vehicle.image}>
