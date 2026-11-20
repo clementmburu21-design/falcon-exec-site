@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const whatsapp = 'https://wa.me/254768000540?text=Hello%20Falcon%20Executive%20Logistics%2C%20I%27d%20like%20to%20discuss%20a%20transport%20requirement.'
 
 const principles = [
-  ['01', 'Professional coordination', 'Clear communication around your itinerary, service requirements and booking arrangements.'],
-  ['02', 'Options for every journey', 'Vehicle and chauffeur arrangements for individual travel, business movements, groups and special occasions.'],
-  ['03', 'Nairobi headquarters, nationwide reach', 'Based in Nairobi and providing transport services to destinations across Kenya, subject to assignment requirements and availability.'],
+  { number: '01', title: 'Professional coordination', text: 'Clear communication around your itinerary, service requirements and booking arrangements.', image: '/fleet/mercedes-s-class.jpg', alt: 'Premium Mercedes-Benz prepared for an executive journey' },
+  { number: '02', title: 'Options for every journey', text: 'Vehicle and chauffeur arrangements for individual travel, business movements, groups and special occasions.', image: '/fleet/mazda-cx5.jpg', alt: 'SUV option from the Falcon vehicle fleet' },
+  { number: '03', title: 'Nairobi headquarters, nationwide reach', text: 'Based in Nairobi and providing transport services to destinations across Kenya, subject to assignment requirements and availability.', image: '/fleet/prado-black.jpg', alt: 'Black Toyota Land Cruiser Prado for travel across Kenya' },
 ]
 
 const services = [
@@ -51,8 +51,11 @@ export default function About() {
             <h2>Service shaped around<br />your journey.</h2>
           </div>
           <div className="about-principle-grid">
-            {principles.map(([number, title, text]) => <article className="about-principle" key={number}>
-              <span>{number}</span><h3>{title}</h3><p>{text}</p>
+            {principles.map(({ number, title, text, image, alt }) => <article className="about-principle" key={number}>
+              <div className="about-principle-image"><img src={image} alt={alt} loading="lazy" /></div>
+              <div className="about-principle-content">
+                <span>{number}</span><h3>{title}</h3><p>{text}</p>
+              </div>
             </article>)}
           </div>
         </div>
