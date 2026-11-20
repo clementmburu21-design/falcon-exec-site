@@ -20,12 +20,12 @@ const fleet = [
   { category: 'COMPACT', name: 'Toyota Vitz', detail: 'A compact option for convenient and budget-conscious city mobility.', image: '/fleet/toyota-vitz.jpg', alt: 'Toyota Vitz' },
 ]
 const services = [
-  ['01', ♙, 'Executive Chauffeur Services', 'Professional, discreet chauffeur-driven transport for executives, VIP guests, business meetings and personal journeys.', '/fleet/chauffeur.webp', 'Chauffeur beside a Mercedes-Benz executive sedan'],
-  ['02', ✈, 'Airport & Hotel Transfers', 'Pre-arranged pickups and drop-offs for JKIA, Wilson Airport, hotels, residences and private aviation terminals.', '/fleet/prado-white.jpg', 'Premium SUV prepared for airport transfer'],
-  ['03', ▱, 'Premium Car Hire', 'Vehicle options across economy, SUV and luxury categories, with self-drive or chauffeur-driven arrangements subject to availability.', '/fleet/premium-car-hire.webp', 'Premium vehicle hire options'],
-  ['04', ♟, 'Corporate & Delegation Travel', 'Coordinated transport for company teams, visiting delegations, conferences, meetings and organisational assignments.', '/fleet/corporate-delegation.webp', 'People carrier for corporate group transport'],
-  ['05', ♧, 'Weddings & Special Events', 'Elegant vehicle arrangements and transport coordination for weddings, celebrations and memorable occasions.', '/fleet/weddings-events.webp', 'Luxury vehicle for wedding transport'],
-  ['06', ◎, 'Safari & Upcountry Travel', 'Suitable vehicle arrangements for upcountry journeys, leisure travel and selected safari routes across Kenya.', '/fleet/prado-black.jpg', '4x4 vehicle for safari and upcountry travel'],
+  ['01', '♙', 'Executive Chauffeur Services', 'Professional, discreet chauffeur-driven transport for executives, VIP guests, business meetings and personal journeys.', '/fleet/chauffeur.webp', 'Chauffeur beside a Mercedes-Benz executive sedan'],
+  ['02', '✈', 'Airport & Hotel Transfers', 'Pre-arranged pickups and drop-offs for JKIA, Wilson Airport, hotels, residences and private aviation terminals.', '/fleet/airport-transfers.webp', 'Range Rover prepared for an airport transfer beside a private jet'],
+  ['03', '▱', 'Premium Car Hire', 'Vehicle options across economy, SUV and luxury categories, with self-drive or chauffeur-driven arrangements subject to availability.', '/fleet/premium-car-hire.webp', 'Premium vehicle hire options'],
+  ['04', '♟', 'Corporate & Delegation Travel', 'Coordinated transport for company teams, visiting delegations, conferences, meetings and organisational assignments.', '/fleet/corporate-delegation.webp', 'Business delegates boarding a Mercedes-Benz V-Class'],
+  ['05', '♧', 'Weddings & Special Events', 'Elegant vehicle arrangements and transport coordination for weddings, celebrations and memorable occasions.', '/fleet/weddings-events.webp', 'Luxury vehicle for wedding transport'],
+  ['06', '◎', 'Safari & Upcountry Travel', 'Suitable vehicle arrangements for upcountry journeys, leisure travel and selected safari routes across Kenya.', '/fleet/safari-upcountry.webp', '4x4 vehicle for safari and upcountry travel'],
 ]
 
 function Heading({ eyebrow, title, text }) {
