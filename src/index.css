@@ -333,3 +333,30 @@
 .vehicle-enquiry-actions .fleet-gold-button{font-size:8px;padding:13px 15px}
 .vehicle-email-button{background:transparent;color:#d0ae70}
 .vehicle-email-button:hover{background:#d0ae70;color:#101010}
+
+
+/* Premium photographic services gallery — reference layout */
+#services{position:relative;isolation:isolate;padding-top:76px;padding-bottom:84px}
+#services::before{content:"";position:absolute;z-index:-1;inset:0;left:50%;width:100vw;transform:translateX(-50%);background:#f7f5f0}
+#services .section-heading{text-align:center;max-width:760px;margin:0 auto}
+#services .section-heading .eyebrow{color:#8c7548;font-size:9px;letter-spacing:.28em;margin-bottom:10px}
+#services .section-heading h2{color:#171717;font:600 clamp(29px,4vw,42px)/1.12 'Playfair Display',serif;letter-spacing:-.035em}
+#services .section-heading h2 em{color:#a8864d;font-weight:500}
+#services .section-intro{color:#77736b;font-size:11px;line-height:1.6;max-width:600px;margin:10px auto 0}
+#services .services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;border:0;margin-top:28px}
+#services .service-card{position:relative;isolation:isolate;overflow:hidden;min-height:190px;height:clamp(190px,20vw,230px);padding:0;border:1px solid rgba(0,0,0,.1);border-radius:9px;background:#171717;box-shadow:0 4px 14px rgba(23,19,12,.12);transition:transform .25s,box-shadow .25s}
+#services .service-card:hover{transform:translateY(-3px);background:#171717;box-shadow:0 9px 22px rgba(23,19,12,.2)}
+#services .service-card-image{position:absolute;inset:0;z-index:-2}
+#services .service-card-image img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.88);transition:transform .5s}
+#services .service-card:hover .service-card-image img{transform:scale(1.045)}
+#services .service-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.02) 5%,rgba(0,0,0,.2) 40%,rgba(0,0,0,.88) 100%)}
+#services .service-card-content{position:absolute;left:0;right:0;bottom:0;padding:18px 17px 15px}
+#services .service-icon{display:inline-flex;align-items:center;justify-content:center;color:#e0bd70;font-size:20px;line-height:1;margin-bottom:7px;text-shadow:0 1px 5px #000}
+#services .service-card h3{font:500 clamp(15px,1.5vw,19px)/1.15 'Playfair Display',serif;color:#fff;margin:0 0 5px;text-shadow:0 1px 5px rgba(0,0,0,.6)}
+#services .service-card p{font-size:10px;line-height:1.45;color:rgba(255,255,255,.9);max-width:390px;margin:0;text-shadow:0 1px 4px rgba(0,0,0,.8)}
+#services .service-card-actions{position:absolute;right:12px;bottom:13px;display:flex;align-items:center;gap:9px}
+#services .service-card-actions .service-arrow{display:flex;align-items:center;justify-content:center;width:27px;height:27px;margin:0;border:1px solid rgba(218,184,111,.65);border-radius:5px;background:rgba(20,18,13,.55);color:#e3c47f;font-size:15px;line-height:1}
+#services .service-card-actions .service-email{margin:0;color:#f0d28f;font-size:7px;letter-spacing:.08em;opacity:0;transition:opacity .2s}
+#services .service-card:hover .service-card-actions .service-email{opacity:1}
+@media(max-width:900px){#services .services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#services .service-card{height:220px}}
+@media(max-width:600px){#services{padding-top:58px;padding-bottom:62px}#services .services-grid{grid-template-columns:1fr;gap:12px;margin-top:24px}#services .service-card{height:225px}#services .service-card-content{padding:18px}}
